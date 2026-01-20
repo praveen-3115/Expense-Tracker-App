@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(270deg,#6366f1,#22c55e,#06b6d4,#6366f1);
+  background-size: 600% 600%;
+  animation: move ease 12s infinite;
+}
+@keyframes move{
+  0%{
+    background-position: 0% 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0% 50%;
+  }
+}
+h1{
+  text-align: center;
+}
+.h1{
+  position: fixed;
+  margin-left: 25pc;
+  top: 0;
+}
+.container{
+  display: block;
+  gap: 10px;
+}
+.input,.nav,.list{
+  width: fit-content;
+  margin: 10px;
+}
+.input{
+  display: flex;
+  margin-left: 25pc;
+  height: 3pc;
+  gap: 10px;
+}
+.nav{
+  display: flex;
+  gap: 10px;
+  margin-left: 30pc;
+}
+nav button{
+  background-color: skyblue;
+}
+button:hover {
+  opacity: 0.7;
+}
+button,input,select{
+  margin: 5px;
+}
+.list{
+  margin-left: 30pc;
+}
+li{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  align-items: center;
+}
+.total{
+  position: fixed;
+  background-color: white;
+  opacity: 0.6;
+  color: black;
+  top: 40;
+  right: 20px;
+  z-index: 1000;
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+  height: 30px;
+
+}
